@@ -1,0 +1,120 @@
+/* ================================================================
+   MIND MATCH GAME — Premium Design Token System
+   ================================================================ */
+
+:root {
+  /* --- Brand Colors --- */
+  --brand-primary: #7c3aed;
+  --brand-secondary: #06b6d4;
+  --brand-accent: #f59e0b;
+  --brand-success: #10b981;
+  --brand-danger: #ef4444;
+  --brand-warning: #f59e0b;
+
+  /* --- Glow Colors --- */
+  --glow-purple: rgba(124, 58, 237, 0.5);
+  --glow-cyan: rgba(6, 182, 212, 0.45);
+  --glow-gold: rgba(245, 158, 11, 0.5);
+  --glow-green: rgba(16, 185, 129, 0.45);
+  --glow-red: rgba(239, 68, 68, 0.45);
+
+  /* --- Gradients --- */
+  --gradient-brand: linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%);
+  --gradient-gold: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+  --gradient-success: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+  --gradient-hero: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  --gradient-card-back: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e1b4b 100%);
+  --gradient-card-front: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
+
+  /* --- Typography --- */
+  --font-primary: 'Outfit', 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 1.875rem;
+  --fs-3xl: 2.25rem;
+  --fs-4xl: 3rem;
+  --fs-hero: 4.5rem;
+
+  /* --- Spacing --- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* --- Border Radius --- */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-full: 9999px;
+
+  /* --- Transitions --- */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.4s ease;
+  --transition-card: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* --- Shadows --- */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
+  --shadow-glow-purple: 0 0 24px var(--glow-purple), 0 0 48px rgba(124, 58, 237, 0.2);
+  --shadow-glow-cyan: 0 0 24px var(--glow-cyan), 0 0 48px rgba(6, 182, 212, 0.2);
+  --shadow-glow-gold: 0 0 24px var(--glow-gold);
+}
+
+/* ---- DARK THEME (Default) ---- */
+[data-theme="dark"] {
+  --bg-root: #080812;
+  --bg-surface: rgba(15, 12, 45, 0.85);
+  --bg-card: rgba(20, 17, 55, 0.9);
+  --bg-glass: rgba(255, 255, 255, 0.04);
+  --bg-glass-hover: rgba(255, 255, 255, 0.07);
+  --bg-input: rgba(255, 255, 255, 0.06);
+  --bg-nav: rgba(8, 8, 20, 0.95);
+
+  --border-color: rgba(124, 58, 237, 0.2);
+  --border-glow: rgba(124, 58, 237, 0.5);
+
+  --text-primary: #f0eeff;
+  --text-secondary: #a89bc2;
+  --text-muted: #6b5f87;
+  --text-inverse: #080812;
+
+  --card-back-shadow: 0 8px 32px rgba(124, 58, 237, 0.4);
+  --card-front-shadow: 0 8px 32px rgba(6, 182, 212, 0.3);
+}
+
+/* ---- LIGHT THEME ---- */
+[data-theme="light"] {
+  --bg-root: #f0edff;
+  --bg-surface: rgba(255, 255, 255, 0.85);
+  --bg-card: rgba(255, 255, 255, 0.95);
+  --bg-glass: rgba(0, 0, 0, 0.03);
+  --bg-glass-hover: rgba(0, 0, 0, 0.06);
+  --bg-input: rgba(0, 0, 0, 0.05);
+  --bg-nav: rgba(255, 255, 255, 0.95);
+
+  --border-color: rgba(124, 58, 237, 0.15);
+  --border-glow: rgba(124, 58, 237, 0.35);
+
+  --text-primary: #1a0a3d;
+  --text-secondary: #4a3570;
+  --text-muted: #9585b5;
+  --text-inverse: #f0eeff;
+
+  --card-back-shadow: 0 8px 32px rgba(124, 58, 237, 0.25);
+  --card-front-shadow: 0 8px 32px rgba(6, 182, 212, 0.2);
+}
