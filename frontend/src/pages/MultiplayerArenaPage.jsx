@@ -39,7 +39,7 @@ const MultiplayerArenaPage = () => {
     const roomData = JSON.parse(savedRoom)
     setRoom(roomData)
 
-    const s = io('http://localhost:5000', { transports: ['websocket'] })
+    const s = io('https://mind-match-s0na.onrender.com', { transports: ['websocket'] })
     setSocket(s)
 
     s.on('connect', () => {
