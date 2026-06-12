@@ -1,4 +1,3 @@
-```javascript
 import express from 'express';
 import http from 'http';
 import { Server } from 'socket.io';
@@ -18,9 +17,9 @@ const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
   process.env.FRONTEND_URL
-];
+].filter(Boolean);
 
-// Socket.io Setup
+// Socket.IO Setup
 const io = new Server(server, {
   cors: {
     origin: allowedOrigins,
@@ -54,10 +53,16 @@ initMultiplayerSocket(io);
 // Start Server
 const PORT = process.env.PORT || 5000;
 
-connectDB().then(() => {
-  server.listen(PORT, () => {
-    console.log("Server running on port " + PORT);
-    console.log("Socket.IO server active");
+connectDB()
+  .then(() => {
+    server.listen(PORT, () => {
+      console.log(`🚀 Server running on port ${PORT}`);
+      console.log('⚡ Socket.IO server active');
+      console.log(`📡 API available at /api`);
+    });
+  })
+  .catch((err) => {
+    console.error('Database connection failed:', err);
+    process.exit(1);
   });
-});
-```
+
