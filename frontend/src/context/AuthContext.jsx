@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://mind-match-s0na.onrender.com/api';
 const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
