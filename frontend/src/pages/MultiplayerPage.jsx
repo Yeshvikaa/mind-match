@@ -16,7 +16,7 @@ const MultiplayerPage = () => {
   const [createdRoom, setCreatedRoom] = useState(null)
 
   useEffect(() => {
-    const s = io('http://localhost:5000', { transports: ['websocket'] })
+    const s = io('https://mind-match-s0na.onrender.com', { transports: ['websocket'] })
     setSocket(s)
 
     s.on('room_created', (room) => {
