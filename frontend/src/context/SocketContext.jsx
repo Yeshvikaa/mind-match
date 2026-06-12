@@ -11,7 +11,7 @@ export const SocketProvider = ({ children }) => {
 
   useEffect(() => {
     if (isAuthenticated && !socketRef.current) {
-      socketRef.current = io('http://localhost:5000', {
+      socketRef.current = io('https://mind-match-s0na.onrender.com', {
         transports: ['websocket'],
         autoConnect: true
       })
