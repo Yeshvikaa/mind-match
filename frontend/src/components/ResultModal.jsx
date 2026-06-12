@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useAuth } from '../context/AuthContext'
 
-const API = 'http://localhost:5000/api'
+const API = 'https://mind-match-s0na.onrender.com/api'
 
 const PerfBar = ({ label, value, type }) => {
   const [width, setWidth] = useState(0)
